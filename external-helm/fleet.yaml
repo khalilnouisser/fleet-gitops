@@ -1,0 +1,13 @@
+namespace: khalil
+helm:
+  releaseName: prometheus
+  repo: ttps://prometheus-community.github.io/helm-charts
+  chart: prometheus
+  version: 24.4.0
+targetCustomizations:
+- name: dev-clusters
+  helm:
+    values:
+      server:
+        global:
+          scrape_interval: false
