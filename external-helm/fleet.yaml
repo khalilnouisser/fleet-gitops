@@ -1,4 +1,4 @@
-namespace: khalil
+defaultNamespace: khalil
 helm:
   releaseName: prometheus
   repo: https://prometheus-community.github.io/helm-charts
